@@ -55,18 +55,18 @@ export const getProducts = () => {
     })
 }
 
-export const getProductsById = (productId) => {
+export const getProductsById = (pId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.find(prod => prod.id === productId))
+            resolve(products.find(prod => prod.id === pId))
         }, 1000)
     })
 }
 
-export const getProductsByCategory = (categoriasId) => {
+export const getProductsByCategory = (cId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.find(produ => produ.category === categoriasId))
+            resolve(products.filter(produ => produ.category === cId))
         }, 1000)
     })
 }

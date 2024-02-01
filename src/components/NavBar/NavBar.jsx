@@ -1,13 +1,13 @@
-
+import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
     return(
         <nav className='text-center' >
-            <h2>e-commerce</h2>
+            <Link to='/' >e-commerce</Link>
             <section>
-                <h2 className='btn btn-primary' to={'/category/celular'} > celular </h2>
-                <h2 className='btn btn-success'to={'/category/computadora'} > computadora </h2>
-                <h2 className='btn btn-warning'to={'/category/tablet'} > tablet </h2>
+                <Link className='btn btn-primary' to={'/productos/celular'} > celular </Link>
+                <Link className='btn btn-success'to={'/productos/computadora'} > computadora </Link>
+                <Link className='btn btn-warning'to={'/productos/tablet'} > tablet </Link>
             </section>
             
         </nav>
