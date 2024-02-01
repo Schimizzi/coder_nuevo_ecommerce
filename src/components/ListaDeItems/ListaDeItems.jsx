@@ -6,8 +6,8 @@ export const ListaDeItems = ({ productos }) => {
             {
                 Array.isArray(productos) && productos.length > 0 ? (
                     productos.map(prod => (
-                        <div key={prod.id}>
-                            <Productos id={prod.id} name={prod.name} img={prod.img} category={prod.category} price={prod.price} />
+                        <div className='pt-3' key={prod.id}>
+                            <Productos id={prod.id} name={prod.name} img={prod.img}  />
                         </div>
                     ))
                 ) : (

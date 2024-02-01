@@ -1,9 +1,13 @@
 
 .logo {
     color: red;
+    text-decoration: none;
     font-weight: bold;
     font-size: 2rem;
     padding: 30px;
     margin: 0px;
 }
 
+.logo:hover {
+    color: rgba(87, 164, 246, 0.624);
+}

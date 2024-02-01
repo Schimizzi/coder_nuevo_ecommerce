@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { getProductsByCategory } from "../asyncMock"
-import { Contador } from "../Contador/Contador"
 import { useParams } from "react-router-dom"
 import { ListaDeItems } from "../ListaDeItems/ListaDeItems"
 
@@ -33,9 +32,7 @@ export const Categorias = () => {
             <h1 className='text-center'>Detalle del producto</h1>
             <h2> {categoria?.name} </h2>
             <img src={categoria?.img} style={{ width: 200 }} alt={categoria?.name} />
-            <p> {categoria?.description} </p>
-            <h2> ${categoria?.price} </h2>
-            <Contador />            
+            <p> {categoria?.description} </p>           
             <ListaDeItems productos={categoria} />
         </div>
     )

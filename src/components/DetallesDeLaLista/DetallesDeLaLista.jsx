@@ -21,7 +21,7 @@ export const DetallesDeLaLista = ({ greeting }) => {
 
     return (
         <>
-            <h1 className='text-center'>{greeting}</h1>
+            <h1 className='text-center pt-3'>{greeting}</h1>
             < ListaDeItems productos={productos} />              
         </>
 

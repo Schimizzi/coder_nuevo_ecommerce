@@ -17,7 +17,7 @@ export const Contador = ({}) => {
 
     return (
         <div className="container text-center">
-            <div className="row">
+            <div className="mb-4 row">
                 <div className="col">
                     <button className='btn btn-primary' onClick={decrement}> - </button>
                     <button className='btn btn-primary' onClick={ () => {console.log('boton para comprar')}} disabled={0}>Agregar {cantidad} al carrito</button>
