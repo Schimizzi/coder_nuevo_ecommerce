@@ -1,16 +1,18 @@
 import classes from './Carrito.module.css';
 import florCarrito from './imgCarrito/cartverde.png'
-import { useEffect } from 'react';
+import { useContext} from 'react';
+import { CarritoContext } from '../../App';
 
-export const Carrito = ({ src }) => {
 
-    useEffect(() => {
-        document.title = 'Carrito' // cambia el nombre de la pestaña
-    }, [])
+
+export const Carrito = () => {
+
+    const value = useContext(CarritoContext)
 
 
     return (
         <div>
+            {value.carrito}
             <img className={classes.carritocss} src={florCarrito} alt='florCarrito' />
         </div>
     )

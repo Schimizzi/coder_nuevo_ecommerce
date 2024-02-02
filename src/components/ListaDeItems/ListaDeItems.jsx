@@ -1,8 +1,13 @@
 import { Productos } from "../Productos/Productos"
 
 export const ListaDeItems = ({ productos }) => {
+    
+    const handleClick = () => {
+        console.log('click en lista de items')
+    }
+
     return (
-        <div className='text-center'>
+        <div className='text-center' onClick={handleClick}>
             {
                 Array.isArray(productos) && productos.length > 0 ? (
                     productos.map(prod => (
